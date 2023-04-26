@@ -1,0 +1,218 @@
+/* global */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+   min-height: 100vh;
+   background: #bcc4af;
+}
+/* header */
+a{
+   text-decoration: none;
+}
+.nav-items{
+   text-align:end;
+}
+
+header {
+   width: 100vw;
+   height: 100vh;
+   background-image: url('/img/nepal-mountain.jpg');
+   background-position: bottom;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* margin-bottom: 40px; */
+}
+
+.header-content {
+   margin-top: 300px;
+   color: whitesmoke;
+   text-align: center;
+}
+
+.header-content h2 {
+   font-size: 4vmin;
+}
+
+.header-content h1 {
+   font-size: 7vmin;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+.btn-first{
+padding: 10px 35px;
+background: rgba(157, 125, 138, 0.7);
+border-radius: 8px;
+color: whitesmoke;
+
+}
+
+.line {
+   width: 150px;
+   height: 4px;
+   background: #9d7d8a;
+   margin: 10px auto;
+}
+
+/* Events */
+ .box-events{
+   background-color: rgba(198, 197, 197, 0.7) ;
+   margin: 0;
+   padding-top: 30px;
+}
+.container-events{
+   width: 90%;
+   margin: 0px auto;
+gap: 20px;
+}
+.title{
+   text-align: center;
+   font-size: 4vmin;
+}
+
+.card-title{
+   text-align: center;
+   font-size: large;
+}
+
+/* explore */
+.explore{
+   width: 100%;
+   height: 100vh;
+   background-image:url('/img/sunset.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+}
+.explore-content{
+width: 60%;
+padding: 40px;
+color:whitesmoke;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.explore-content h1{
+font-size: 7vmin;
+margin:50px;
+}
+.explore-content .line{
+   margin-bottom:40px ;
+}
+.explore-content p{
+   color: rgb(255, 102, 0);
+   font-size: 26px;
+}
+.explore-content .btn-explore{
+margin-top: 30px;
+}
+
+
+/* gallery  */
+.gallery-gallery{
+   background-color:#F4F1F0;
+   padding-bottom: 40px;
+}
+.title-gallery{
+   text-align: center;
+   padding-top: 40px;
+   font-size: 50px;
+}
+.img-gallery{
+width: 80%;
+margin: 50px auto 50px;
+display: grid;
+/* grid-template-columns: repeat(3, 1fr); */
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+/* grid-template-rows: 230px repeat(auto-fill, 100px) 300px; */
+grid-template-rows: 280px 280px;
+grid-gap: 30px;
+
+}
+
+.img-gallery img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* img заполняеи всю ячейку */
+   cursor: pointer;
+}
+
+.img-gallery img:hover{
+transform: scale(0.8) rotate(-15deg);
+border-radius: 20px;
+box-shadow: 0 32px 75px rgba(68, 77, 136, 0,2);
+}
+
+.full-img{
+width: 100%;
+height: 100vh;
+background-color: rgba(180, 180, 201, 0.9);
+top: 0;
+left: 0;
+position: fixed;
+display: none; /* после openFullImg  становится flex */
+align-items: center;
+justify-content: center;
+z-index: 100;   /* большая картинка перекрівает маленькую */
+
+}
+.full-img img{
+   width: 100%;
+   max-width: 900px;
+  }
+
+.full-img span{
+position: absolute;
+top: 5%;
+right: 5%;
+font-size: 45px;
+color: #ffff;
+cursor: pointer;
+}
+
+/* end galery  */
+
+/* footer */
+.footer{
+   background-color: rgba(142, 164, 203, 0.431);
+   width: 100%;
+   padding: 3px;
+}
+
+.col-footer{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+}
+   .adress{
+     display: block;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+  }
+
+  .icon {
+     display: inline;
+     padding: 9px;
+  }
+
+
+ /* .footer
+   width: 100%;
+   padding: 60px 40px ;
+   background-color: rgba(221, 217, 206, 255);
+   display: flex; /* col становятся рядом */
+
+
+
