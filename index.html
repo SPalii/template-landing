@@ -7,11 +7,16 @@
    <title>Landing</title>
    <!-- css -->
    <link rel="stylesheet" href="src/slyles.css">
+   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet">
 
    <!-- Bootstrap js -->
 
@@ -30,29 +35,30 @@
 <body>
 <!-- nav bar -->
 <header>
-<nav class="navbar navbar-expand-lg navbar-light  ">
-Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+<nav class="navbar navbar-expand-lg navbar-light ">
+   <span class="logo">WW</span>
+ <button class="navbar-toggler toggler-color" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"> </span>
    </button>
-   <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav nav-items">
-         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+   <div class="collapse navbar-collapse  ul-item" id="navbarNav">
+
+      <ul class="navbar-nav">
+         <li class="nav-item li-item  pr-4 active">
+            <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
          </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+         <li class="nav-item li-item pr-4">
+            <a class="nav-link " href="#upcoming">Events</a>
          </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+         <li class="nav-item li-item pr-4">
+            <a class="nav-link " href="#Karpaty">Karpaty</a>
          </li>
-         <li class="nav-item">
-            <a class="nav-link disabled" href="#">Contact</a>
+         <li class="nav-item li-item pr-4">
+            <a class="nav-link " href="#contact">Contact</a>
          </li>
       </ul>
    </div>
 </nav>
-
 
 <!-- header -->
 <div class="header-content">
@@ -64,21 +70,26 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
 </div>
 </header>
 
+<!-- button up -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+   <i class="fas fa-arrow-up"></i>
+</button>
+
 <!-- Events -->
 <div class="box-events">
 <section class="section-events ">
-   <div class="title  ">
-      <h1 class="upcoming">Upcoming Events</h1>
+   <div class="title-events">
+      <h1 id="upcoming">Upcoming Events</h1>
       <div class="line"></div>
    </div>
 </section>
 
-<!-- row1  Bootstrap-->
+<!-- row1  Bootstrap card-->
 <div class="container container-events text-center mb-0 mt-0">
 <div class="row ">
 
    <div class="card-group">
-   <div class="card p-3 m-3 border bg-warning">
+   <div class="card p-3 m-md-4 border bg-warning">
       <img src="./img/goverla1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
          <h5 class="card-title">Гора Говерла</h5>
@@ -88,7 +99,7 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
       </div>
    </div>
 
-   <div class="card p-3 m-3 border bg-warning">
+   <div class="card p-3 m-md-4 border bg-warning">
       <img src="./img/narcissus.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
          <h5 class="card-title">Поля нарцисів</h5>
@@ -103,12 +114,12 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
    </div>
 </div>
 </div>
-<!-- row2 Bootstrap-->
+<!-- row2 Bootstrap card-->
 <div class="container container-events text-center">
    <div class="row ">
 
       <div class="card-group ">
-         <div class="card p-3 m-3 border bg-warning">
+         <div class="card p-3 m-md-4 border bg-warning">
             <img src="./img/Synevir.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                <h5 class="card-title">Озеро Синевир</h5>
@@ -117,7 +128,7 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
             </div>
          </div>
 
-         <div class="card p-3 m-3 border bg-warning">
+         <div class="card p-3 m-md-4 border bg-warning">
             <img src="./img/Shupit.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                <h5 class="card-title">Водоспад Шипіт</h5>
@@ -149,7 +160,7 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
 
 <div class="gallery-gallery">
 
-   <h2 class="title-gallery ">Карпати</h2>
+   <h2 class="title-gallery" id="Karpaty">Карпати</h2>
    <div class="line bg-dark"></div>
 
 <div class="full-img" id="fullImgBox">
@@ -159,22 +170,21 @@ Logo   <button class="navbar-toggler" type="button" data-toggle="collapse" data-
 
 <div class="img-gallery">
 
-   <img src="/img/karpaty-06.jpg"  alt=" " onclick="openFullImg(this.src)">
-   <img src="/img/karpaty-08.jpg"  alt=" " onclick="openFullImg(this.src)">
+   <img src="/img/karpaty-06.jpg"  alt="" onclick="openFullImg(this.src)">
+   <img src="/img/karpaty-08.jpg"  alt="" onclick="openFullImg(this.src)">
    <img src="/img/karpati-01.jpg"  alt="" onclick="openFullImg(this.src)">
    <img src="/img/karpaty-02.jpg"  alt="" onclick="openFullImg(this.src)">
-   <img src="/img/karpaty-03.jpg"  alt="" onclick="openFullImg(this.src)">
-   <img src="/img/karpaty-04.jpg"  alt="" onclick="openFullImg(this.src)">
-   <img src="/img/Karpaty-09.png"  alt="" onclick="openFullImg(this.src)">
    <img src="/img/karpaty-07.jpg"  alt="" onclick="openFullImg(this.src)">
-   <!-- <img src="/img/Klevan.jpg" class="img-thumbnail" alt="" onclick="openFullImg(this.src)"> -->
+   <img src="/img/karpaty-04.jpg"  alt="" onclick="openFullImg(this.src)">
+   <img src="/img/karpaty-03.jpg"  alt="" onclick="openFullImg(this.src)">
+   <img src="/img/Karpaty-09.png"  alt="" onclick="openFullImg(this.src)">
 
 </div>
 </div>
 <!-- Gallery  end-->
 
 <!-- footer -->
-<footer class="footer ">
+<footer class="footer" id="contact">
    <div class="container-footer text-center py-2 md-3">
 
    <div class="row row-footer">
