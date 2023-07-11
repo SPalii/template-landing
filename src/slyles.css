@@ -1,16 +1,16 @@
 /* global */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   }
 
 body{
    min-height: 100vh;
    background: #bcc4af;
    font-family: 'Arapay';
 }
-/* header */
+/*  nav*/
 a{
    text-decoration: none;
 }
@@ -42,6 +42,19 @@ a:hover {
 background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")' stroke-width=' 2' stroke-linecap=' round' stroke-miterlimit=' 10' d=' M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
 }
 
+/* navbar-scrolled   объявляем класс, испол в js*/
+.navbar-scrolled {
+   background-color: rgb(172, 181, 178);
+   opacity: 0.6;
+   transition: all 1s;
+   /* -webkit-text-fill-color: rgba(225, 36, 36, 0.887); */
+   font-weight: bold;
+}
+.navtext-scrolled{
+   color: rgb(37, 37, 37);
+}
+
+/* header*/
 header {
    width: 100vw;
    height: 100vh;
@@ -51,13 +64,18 @@ header {
    display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
    /* margin-bottom: 40px; */
 }
 
 .header-content {
-   margin-top: 300px;
+   /* margin-top: 300px; */
+position: absolute;
+top: 35%;
+left: 40%;
    color: whitesmoke;
-   text-align: center;
+
+
 }
 
 .header-content h2 {
@@ -260,8 +278,9 @@ cursor: pointer;
      padding: 9px;
   }
 
-@media (max-width: 780px) {
 
+
+@media (max-width: 780px) {
 
    .title-contact{
       margin-top: 20px;
